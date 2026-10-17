@@ -1,0 +1,3537 @@
+{
+  "status": "done",
+  "done": 27,
+  "total": 27,
+  "started_at": "2026-10-17T14:16:47",
+  "finished_at": "2026-10-17T14:19:19",
+  "results": [
+    {
+      "q": {
+        "id": 1,
+        "type": "direct",
+        "question": "How many vacation days do I get per year?",
+        "expected": "Vacation Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Employees receive 15 vacation days per year. Unused days may roll over.",
+          "answerable": true,
+          "policy": {
+            "id": 95,
+            "title": "Vacation Policy",
+            "department": "IT",
+            "category": "Human Resources",
+            "text": "Employees receive 15 vacation days per year. Unused days may roll over."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "vacation",
+              "day",
+              "year"
+            ],
+            "candidates": [
+              {
+                "title": "Vacation Policy",
+                "score": 0.6,
+                "matched": [
+                  "vacation",
+                  "day",
+                  "year"
+                ]
+              },
+              {
+                "title": "Warranty Policy",
+                "score": 0.11,
+                "matched": [
+                  "year"
+                ]
+              },
+              {
+                "title": "Work From Abroad Policy",
+                "score": 0.08,
+                "matched": [
+                  "day"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Employees receive 15 vacation days per year.",
+          "answerable": true,
+          "policy": {
+            "id": 95,
+            "title": "Vacation Policy",
+            "department": "IT",
+            "category": "Human Resources",
+            "text": "Employees receive 15 vacation days per year. Unused days may roll over."
+          },
+          "cited_title": "Vacation Policy",
+          "evidence": "Employees receive 15 vacation days per year.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4926.4,
+            "tokens": {
+              "input": 2780,
+              "output": 55,
+              "thinking": 93,
+              "total": 2928
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You receive 15 vacation days per year.",
+          "answerable": true,
+          "policy": {
+            "id": 95,
+            "title": "Vacation Policy",
+            "department": "IT",
+            "category": "Human Resources",
+            "text": "Employees receive 15 vacation days per year. Unused days may roll over."
+          },
+          "cited_title": "Vacation Policy",
+          "evidence": "Employees receive 15 vacation days per year.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4617.6,
+            "tokens": {
+              "input": 233,
+              "output": 55,
+              "thinking": 150,
+              "total": 438
+            },
+            "embedding_tokens": 17,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 383.1,
+              "search_ms": 10.5,
+              "llm_ms": 4223.8
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Vacation Policy",
+                "score": 0.792
+              },
+              {
+                "title": "Holiday Schedule Policy",
+                "score": 0.685
+              },
+              {
+                "title": "Parental Leave Policy",
+                "score": 0.676
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 2,
+        "type": "direct",
+        "question": "Can I work from home?",
+        "expected": "Remote Work Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Employees may request ergonomic equipment for remote work.",
+          "answerable": true,
+          "policy": {
+            "id": 67,
+            "title": "Home Office Equipment Policy",
+            "department": "Legal",
+            "category": "Remote Work",
+            "text": "Employees may request ergonomic equipment for remote work."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "work",
+              "home"
+            ],
+            "candidates": [
+              {
+                "title": "Home Office Equipment Policy",
+                "score": 0.76,
+                "matched": [
+                  "work",
+                  "home"
+                ]
+              },
+              {
+                "title": "Work From Abroad Policy",
+                "score": 0.36,
+                "matched": [
+                  "work"
+                ]
+              },
+              {
+                "title": "Remote Work Policy",
+                "score": 0.36,
+                "matched": [
+                  "work"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Yes, employees are permitted to work remotely up to three days per week, provided they have approval from their manager.",
+          "answerable": true,
+          "policy": {
+            "id": 24,
+            "title": "Remote Work Policy",
+            "department": "Facilities",
+            "category": "Remote Work",
+            "text": "Employees may work remotely up to three days per week with manager approval."
+          },
+          "cited_title": "Remote Work Policy",
+          "evidence": "Employees may work remotely up to three days per week with manager approval.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3716.9,
+            "tokens": {
+              "input": 2776,
+              "output": 57,
+              "thinking": 247,
+              "total": 3080
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Yes, you may work remotely up to three days per week with manager approval.",
+          "answerable": true,
+          "policy": {
+            "id": 24,
+            "title": "Remote Work Policy",
+            "department": "Facilities",
+            "category": "Remote Work",
+            "text": "Employees may work remotely up to three days per week with manager approval."
+          },
+          "cited_title": "Remote Work Policy",
+          "evidence": "Employees may work remotely up to three days per week with manager approval.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3002.6,
+            "tokens": {
+              "input": 228,
+              "output": 55,
+              "thinking": 94,
+              "total": 377
+            },
+            "embedding_tokens": 13,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 392.0,
+              "search_ms": 19.1,
+              "llm_ms": 2591.3
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Remote Work Policy",
+                "score": 0.728
+              },
+              {
+                "title": "Home Office Equipment Policy",
+                "score": 0.717
+              },
+              {
+                "title": "Work From Abroad Policy",
+                "score": 0.705
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 3,
+        "type": "direct",
+        "question": "How often do I have to change my password?",
+        "expected": "Password Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Passwords must be changed every 90 days and meet complexity requirements.",
+          "answerable": true,
+          "policy": {
+            "id": 92,
+            "title": "Password Policy",
+            "department": "HR",
+            "category": "IT & Security",
+            "text": "Passwords must be changed every 90 days and meet complexity requirements."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "often",
+              "change",
+              "password"
+            ],
+            "candidates": [
+              {
+                "title": "Password Policy",
+                "score": 0.5,
+                "matched": [
+                  "password"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "You must change your password every 90 days.",
+          "answerable": true,
+          "policy": {
+            "id": 92,
+            "title": "Password Policy",
+            "department": "HR",
+            "category": "IT & Security",
+            "text": "Passwords must be changed every 90 days and meet complexity requirements."
+          },
+          "cited_title": "Password Policy",
+          "evidence": "Passwords must be changed every 90 days and meet complexity requirements.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3388.1,
+            "tokens": {
+              "input": 2780,
+              "output": 59,
+              "thinking": 111,
+              "total": 2950
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You must change your password every 90 days.",
+          "answerable": true,
+          "policy": {
+            "id": 92,
+            "title": "Password Policy",
+            "department": "HR",
+            "category": "IT & Security",
+            "text": "Passwords must be changed every 90 days and meet complexity requirements."
+          },
+          "cited_title": "Password Policy",
+          "evidence": "Passwords must be changed every 90 days and meet complexity requirements.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4781.1,
+            "tokens": {
+              "input": 221,
+              "output": 49,
+              "thinking": 136,
+              "total": 406
+            },
+            "embedding_tokens": 17,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 370.9,
+              "search_ms": 18.5,
+              "llm_ms": 4391.6
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Password Policy",
+                "score": 0.811
+              },
+              {
+                "title": "Account Management Policy",
+                "score": 0.695
+              },
+              {
+                "title": "Cybersecurity Awareness Policy",
+                "score": 0.647
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 4,
+        "type": "direct",
+        "question": "Do I need approval for a $700 purchase?",
+        "expected": "Expense Approval Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "approval",
+              "700",
+              "purchase"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Yes, you need prior approval from Finance because all expenses over $500 require it.",
+          "answerable": true,
+          "policy": {
+            "id": 59,
+            "title": "Expense Approval Policy",
+            "department": "Legal",
+            "category": "Finance & Expense",
+            "text": "All expenses over $500 require prior approval from Finance."
+          },
+          "cited_title": "Expense Approval Policy",
+          "evidence": "All expenses over $500 require prior approval from Finance.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3225.8,
+            "tokens": {
+              "input": 2782,
+              "output": 67,
+              "thinking": 140,
+              "total": 2989
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Yes, you need prior approval from Finance because expenses over $500 require it.",
+          "answerable": true,
+          "policy": {
+            "id": 59,
+            "title": "Expense Approval Policy",
+            "department": "Legal",
+            "category": "Finance & Expense",
+            "text": "All expenses over $500 require prior approval from Finance."
+          },
+          "cited_title": "Expense Approval Policy",
+          "evidence": "All expenses over $500 require prior approval from Finance.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3360.6,
+            "tokens": {
+              "input": 225,
+              "output": 51,
+              "thinking": 218,
+              "total": 494
+            },
+            "embedding_tokens": 19,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 398.2,
+              "search_ms": 9.4,
+              "llm_ms": 2952.9
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Expense Approval Policy",
+                "score": 0.744
+              },
+              {
+                "title": "Procurement Policy",
+                "score": 0.664
+              },
+              {
+                "title": "Contract Review Policy",
+                "score": 0.66
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 5,
+        "type": "direct",
+        "question": "How long is parental leave?",
+        "expected": "Parental Leave Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Eligible employees may take up to 12 weeks of paid parental leave.",
+          "answerable": true,
+          "policy": {
+            "id": 75,
+            "title": "Parental Leave Policy",
+            "department": "Marketing",
+            "category": "Human Resources",
+            "text": "Eligible employees may take up to 12 weeks of paid parental leave."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "long",
+              "parental",
+              "leave"
+            ],
+            "candidates": [
+              {
+                "title": "Parental Leave Policy",
+                "score": 0.78,
+                "matched": [
+                  "parental",
+                  "leave"
+                ]
+              },
+              {
+                "title": "Sick Leave Policy",
+                "score": 0.34,
+                "matched": [
+                  "leave"
+                ]
+              },
+              {
+                "title": "Bereavement Leave Policy",
+                "score": 0.34,
+                "matched": [
+                  "leave"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Eligible employees are entitled to take up to 12 weeks of paid parental leave.",
+          "answerable": true,
+          "policy": {
+            "id": 75,
+            "title": "Parental Leave Policy",
+            "department": "Marketing",
+            "category": "Human Resources",
+            "text": "Eligible employees may take up to 12 weeks of paid parental leave."
+          },
+          "cited_title": "Parental Leave Policy",
+          "evidence": "Eligible employees may take up to 12 weeks of paid parental leave.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 2585.4,
+            "tokens": {
+              "input": 2776,
+              "output": 70,
+              "thinking": 105,
+              "total": 2951
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Eligible employees may take up to 12 weeks of paid parental leave.",
+          "answerable": true,
+          "policy": {
+            "id": 75,
+            "title": "Parental Leave Policy",
+            "department": "Marketing",
+            "category": "Human Resources",
+            "text": "Eligible employees may take up to 12 weeks of paid parental leave."
+          },
+          "cited_title": "Parental Leave Policy",
+          "evidence": "Eligible employees may take up to 12 weeks of paid parental leave.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 2902.3,
+            "tokens": {
+              "input": 233,
+              "output": 53,
+              "thinking": 97,
+              "total": 383
+            },
+            "embedding_tokens": 13,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 417.0,
+              "search_ms": 20.0,
+              "llm_ms": 2465.2
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Parental Leave Policy",
+                "score": 0.796
+              },
+              {
+                "title": "Bereavement Leave Policy",
+                "score": 0.651
+              },
+              {
+                "title": "Vacation Policy",
+                "score": 0.628
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 6,
+        "type": "direct",
+        "question": "Can I work from another country?",
+        "expected": "Work From Abroad Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Employees may work abroad for up to 30 days with approval.",
+          "answerable": true,
+          "policy": {
+            "id": 10,
+            "title": "Work From Abroad Policy",
+            "department": "Facilities",
+            "category": "Remote Work",
+            "text": "Employees may work abroad for up to 30 days with approval."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "work",
+              "another",
+              "country"
+            ],
+            "candidates": [
+              {
+                "title": "Work From Abroad Policy",
+                "score": 0.36,
+                "matched": [
+                  "work"
+                ]
+              },
+              {
+                "title": "Remote Work Policy",
+                "score": 0.36,
+                "matched": [
+                  "work"
+                ]
+              },
+              {
+                "title": "Work Anniversary Recognition Policy",
+                "score": 0.36,
+                "matched": [
+                  "work"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Yes, employees are permitted to work abroad for up to 30 days provided they obtain approval.",
+          "answerable": true,
+          "policy": {
+            "id": 10,
+            "title": "Work From Abroad Policy",
+            "department": "Facilities",
+            "category": "Remote Work",
+            "text": "Employees may work abroad for up to 30 days with approval."
+          },
+          "cited_title": "Work From Abroad Policy",
+          "evidence": "Employees may work abroad for up to 30 days with approval.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 2788.4,
+            "tokens": {
+              "input": 2777,
+              "output": 70,
+              "thinking": 119,
+              "total": 2966
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "error": "Every answer model failed: gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.6-flash (503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+          "metrics": {
+            "ms": 6406.6,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 7,
+        "type": "direct",
+        "question": "What is the dress code?",
+        "expected": "Dress Code Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Employees are expected to dress in business casual attire.",
+          "answerable": true,
+          "policy": {
+            "id": 2,
+            "title": "Dress Code Policy",
+            "department": "Facilities",
+            "category": "Workplace",
+            "text": "Employees are expected to dress in business casual attire."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "dress",
+              "code"
+            ],
+            "candidates": [
+              {
+                "title": "Dress Code Policy",
+                "score": 1.0,
+                "matched": [
+                  "dress",
+                  "code"
+                ]
+              },
+              {
+                "title": "Code of Conduct",
+                "score": 0.46,
+                "matched": [
+                  "code"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Employees are expected to wear business casual attire.",
+          "answerable": true,
+          "policy": {
+            "id": 2,
+            "title": "Dress Code Policy",
+            "department": "Facilities",
+            "category": "Workplace",
+            "text": "Employees are expected to dress in business casual attire."
+          },
+          "cited_title": "Dress Code Policy",
+          "evidence": "Employees are expected to dress in business casual attire.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4029.1,
+            "tokens": {
+              "input": 2776,
+              "output": 54,
+              "thinking": 88,
+              "total": 2918
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Employees are expected to dress in business casual attire.",
+          "answerable": true,
+          "policy": {
+            "id": 2,
+            "title": "Dress Code Policy",
+            "department": "Facilities",
+            "category": "Workplace",
+            "text": "Employees are expected to dress in business casual attire."
+          },
+          "cited_title": "Dress Code Policy",
+          "evidence": "Employees are expected to dress in business casual attire.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5555.9,
+            "tokens": {
+              "input": 216,
+              "output": 40,
+              "thinking": 230,
+              "total": 486
+            },
+            "embedding_tokens": 13,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.6-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 402.6,
+              "search_ms": 14.8,
+              "llm_ms": 5138.4
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Dress Code Policy",
+                "score": 0.77
+              },
+              {
+                "title": "Anti-Harassment Policy",
+                "score": 0.644
+              },
+              {
+                "title": "Office Access Policy",
+                "score": 0.63
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 8,
+        "type": "paraphrase",
+        "question": "Can I let a colleague borrow my access card to get into the building?",
+        "expected": "Office Access Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "let",
+              "colleague",
+              "borrow",
+              "access",
+              "card",
+              "build"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No, you cannot let a colleague borrow your access card because access badges must be worn and not shared.",
+          "answerable": true,
+          "policy": {
+            "id": 51,
+            "title": "Office Access Policy",
+            "department": "HR",
+            "category": "IT & Security",
+            "text": "Access badges must be worn and not shared."
+          },
+          "cited_title": "Office Access Policy",
+          "evidence": "Access badges must be worn and not shared.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5028.2,
+            "tokens": {
+              "input": 2785,
+              "output": 65,
+              "thinking": 290,
+              "total": 3140
+            },
+            "retries": 0,
+            "model": "gemini-3.6-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No, you cannot let a colleague borrow your access card because access badges must not be shared.",
+          "answerable": true,
+          "policy": {
+            "id": 51,
+            "title": "Office Access Policy",
+            "department": "HR",
+            "category": "IT & Security",
+            "text": "Access badges must be worn and not shared."
+          },
+          "cited_title": "Office Access Policy",
+          "evidence": "Access badges must be worn and not shared.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5543.2,
+            "tokens": {
+              "input": 229,
+              "output": 48,
+              "thinking": 244,
+              "total": 521
+            },
+            "embedding_tokens": 22,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.6-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 406.2,
+              "search_ms": 17.6,
+              "llm_ms": 5119.3
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Office Access Policy",
+                "score": 0.764
+              },
+              {
+                "title": "Laptop Usage Policy",
+                "score": 0.627
+              },
+              {
+                "title": "Corporate Card Policy",
+                "score": 0.626
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 9,
+        "type": "paraphrase",
+        "question": "My grandmother passed away. How much time off can I take?",
+        "expected": "Bereavement Leave Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.4,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "grandmother",
+              "pass",
+              "away",
+              "time",
+              "off",
+              "take"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "You may take up to 5 days of bereavement leave.",
+          "answerable": true,
+          "policy": {
+            "id": 70,
+            "title": "Bereavement Leave Policy",
+            "department": "Legal",
+            "category": "Human Resources",
+            "text": "Employees may take up to 5 days of bereavement leave."
+          },
+          "cited_title": "Bereavement Leave Policy",
+          "evidence": "Employees may take up to 5 days of bereavement leave.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5590.2,
+            "tokens": {
+              "input": 2783,
+              "output": 45,
+              "thinking": 302,
+              "total": 3130
+            },
+            "retries": 0,
+            "model": "gemini-3.6-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You can take up to 5 days of bereavement leave.",
+          "answerable": true,
+          "policy": {
+            "id": 70,
+            "title": "Bereavement Leave Policy",
+            "department": "Legal",
+            "category": "Human Resources",
+            "text": "Employees may take up to 5 days of bereavement leave."
+          },
+          "cited_title": "Bereavement Leave Policy",
+          "evidence": "Employees may take up to 5 days of bereavement leave.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5703.0,
+            "tokens": {
+              "input": 235,
+              "output": 45,
+              "thinking": 280,
+              "total": 560
+            },
+            "embedding_tokens": 20,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.6-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 1,
+            "breakdown": {
+              "embed_ms": 375.6,
+              "search_ms": 16.0,
+              "llm_ms": 5311.2
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Bereavement Leave Policy",
+                "score": 0.774
+              },
+              {
+                "title": "Parental Leave Policy",
+                "score": 0.664
+              },
+              {
+                "title": "Sick Leave Policy",
+                "score": 0.642
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 10,
+        "type": "paraphrase",
+        "question": "I need a proper chair and a bigger monitor for my desk at home.",
+        "expected": "Home Office Equipment Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.4,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "proper",
+              "chair",
+              "bigger",
+              "monitor",
+              "desk",
+              "home"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "error": "Every answer model failed: gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.6-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+          "metrics": {
+            "ms": 3040.9,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Employees working remotely may request ergonomic equipment for their home setup.",
+          "answerable": true,
+          "policy": {
+            "id": 67,
+            "title": "Home Office Equipment Policy",
+            "department": "Legal",
+            "category": "Remote Work",
+            "text": "Employees may request ergonomic equipment for remote work."
+          },
+          "cited_title": "Home Office Equipment Policy",
+          "evidence": "Employees may request ergonomic equipment for remote work.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4421.1,
+            "tokens": {
+              "input": 229,
+              "output": 57,
+              "thinking": 140,
+              "total": 426
+            },
+            "embedding_tokens": 22,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 1,
+            "breakdown": {
+              "embed_ms": 371.1,
+              "search_ms": 15.1,
+              "llm_ms": 4034.7
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Home Office Equipment Policy",
+                "score": 0.722
+              },
+              {
+                "title": "Hardware Upgrade Policy",
+                "score": 0.653
+              },
+              {
+                "title": "Mobile Device Policy",
+                "score": 0.619
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 11,
+        "type": "paraphrase",
+        "question": "Someone at work keeps bullying me. What does the company say about that?",
+        "expected": "Anti-Harassment Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "someone",
+              "work",
+              "keep",
+              "bully",
+              "say"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "According to the Anti-Harassment Policy, harassment of any kind is not tolerated by the company.",
+          "answerable": true,
+          "policy": {
+            "id": 5,
+            "title": "Anti-Harassment Policy",
+            "department": "Marketing",
+            "category": "Compliance",
+            "text": "Harassment of any kind is not tolerated."
+          },
+          "cited_title": "Anti-Harassment Policy",
+          "evidence": "Harassment of any kind is not tolerated.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 22457.0,
+            "tokens": {
+              "input": 2785,
+              "output": 66,
+              "thinking": 2797,
+              "total": 5648
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers it.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 9949.8,
+            "tokens": {
+              "input": 224,
+              "output": 39,
+              "thinking": 1064,
+              "total": 1327
+            },
+            "embedding_tokens": 22,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 431.0,
+              "search_ms": 9.4,
+              "llm_ms": 9509.3
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Anti-Harassment Policy",
+                "score": 0.722
+              },
+              {
+                "title": "Diversity and Inclusion Policy",
+                "score": 0.691
+              },
+              {
+                "title": "Dress Code Policy",
+                "score": 0.675
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 12,
+        "type": "paraphrase",
+        "question": "A reporter called and asked for a comment. Can I answer?",
+        "expected": "Media Contact Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.1,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "reporter",
+              "call",
+              "ask",
+              "comment",
+              "answer"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "You may only speak to the reporter if you are an authorized employee.",
+          "answerable": true,
+          "policy": {
+            "id": 84,
+            "title": "Media Contact Policy",
+            "department": "Finance",
+            "category": "Compliance",
+            "text": "Only authorized employees may speak to the media."
+          },
+          "cited_title": "Media Contact Policy",
+          "evidence": "Only authorized employees may speak to the media.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4076.2,
+            "tokens": {
+              "input": 2783,
+              "output": 58,
+              "thinking": 97,
+              "total": 2938
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You may only speak to the reporter if you are an authorized employee.",
+          "answerable": true,
+          "policy": {
+            "id": 84,
+            "title": "Media Contact Policy",
+            "department": "Finance",
+            "category": "Compliance",
+            "text": "Only authorized employees may speak to the media."
+          },
+          "cited_title": "Media Contact Policy",
+          "evidence": "Only authorized employees may speak to the media.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 2945.7,
+            "tokens": {
+              "input": 221,
+              "output": 48,
+              "thinking": 152,
+              "total": 421
+            },
+            "embedding_tokens": 20,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 384.3,
+              "search_ms": 20.3,
+              "llm_ms": 2540.9
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Media Contact Policy",
+                "score": 0.757
+              },
+              {
+                "title": "Public Speaking Policy",
+                "score": 0.677
+              },
+              {
+                "title": "Press Release Policy",
+                "score": 0.66
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 13,
+        "type": "paraphrase",
+        "question": "I think a coworker is stealing. Can I report it without giving my name?",
+        "expected": "Whistleblower Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.5,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "think",
+              "coworker",
+              "steal",
+              "report",
+              "without",
+              "giv",
+              "name"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Yes, you can report unethical behavior anonymously.",
+          "answerable": true,
+          "policy": {
+            "id": 79,
+            "title": "Whistleblower Policy",
+            "department": "HR",
+            "category": "Compliance",
+            "text": "Employees may report unethical behavior anonymously."
+          },
+          "cited_title": "Whistleblower Policy",
+          "evidence": "Employees may report unethical behavior anonymously.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 2601.1,
+            "tokens": {
+              "input": 2786,
+              "output": 52,
+              "thinking": 103,
+              "total": 2941
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Yes, employees are permitted to report unethical behavior anonymously.",
+          "answerable": true,
+          "policy": {
+            "id": 79,
+            "title": "Whistleblower Policy",
+            "department": "HR",
+            "category": "Compliance",
+            "text": "Employees may report unethical behavior anonymously."
+          },
+          "cited_title": "Whistleblower Policy",
+          "evidence": "Employees may report unethical behavior anonymously.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3468.8,
+            "tokens": {
+              "input": 219,
+              "output": 44,
+              "thinking": 140,
+              "total": 403
+            },
+            "embedding_tokens": 23,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 431.9,
+              "search_ms": 16.3,
+              "llm_ms": 3020.4
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Whistleblower Policy",
+                "score": 0.738
+              },
+              {
+                "title": "Recognition Program Policy",
+                "score": 0.636
+              },
+              {
+                "title": "Internal Communication Policy",
+                "score": 0.623
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 14,
+        "type": "paraphrase",
+        "question": "Can I take a day off when my child is ill?",
+        "expected": "Sick Leave Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.4,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "take",
+              "day",
+              "off",
+              "child",
+              "ill"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Yes, you can use accrued sick leave when a family member, such as your child, is ill.",
+          "answerable": true,
+          "policy": {
+            "id": 65,
+            "title": "Sick Leave Policy",
+            "department": "Sales",
+            "category": "Human Resources",
+            "text": "Employees accrue sick leave monthly for personal or family illness."
+          },
+          "cited_title": "Sick Leave Policy",
+          "evidence": "Employees accrue sick leave monthly for personal or family illness.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4033.8,
+            "tokens": {
+              "input": 2782,
+              "output": 67,
+              "thinking": 126,
+              "total": 2975
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "Yes, you can use sick leave when your child is ill, as sick leave accrues monthly for personal or family illness.",
+          "answerable": true,
+          "policy": {
+            "id": 65,
+            "title": "Sick Leave Policy",
+            "department": "Sales",
+            "category": "Human Resources",
+            "text": "Employees accrue sick leave monthly for personal or family illness."
+          },
+          "cited_title": "Sick Leave Policy",
+          "evidence": "Employees accrue sick leave monthly for personal or family illness.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3878.1,
+            "tokens": {
+              "input": 234,
+              "output": 61,
+              "thinking": 115,
+              "total": 410
+            },
+            "embedding_tokens": 19,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 418.9,
+              "search_ms": 9.5,
+              "llm_ms": 3449.3
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Sick Leave Policy",
+                "score": 0.689
+              },
+              {
+                "title": "Parental Leave Policy",
+                "score": 0.639
+              },
+              {
+                "title": "Bereavement Leave Policy",
+                "score": 0.637
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 15,
+        "type": "paraphrase",
+        "question": "How soon after a business trip must I hand in my receipts?",
+        "expected": "Travel Reimbursement Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "soon",
+              "business",
+              "trip",
+              "hand",
+              "receipt"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "You must submit your travel expense receipts within 30 days.",
+          "answerable": true,
+          "policy": {
+            "id": 93,
+            "title": "Travel Reimbursement Policy",
+            "department": "Facilities",
+            "category": "Finance & Expense",
+            "text": "Employees must submit receipts for travel expenses within 30 days."
+          },
+          "cited_title": "Travel Reimbursement Policy",
+          "evidence": "Employees must submit receipts for travel expenses within 30 days.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3351.6,
+            "tokens": {
+              "input": 2783,
+              "output": 62,
+              "thinking": 102,
+              "total": 2947
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You must submit your receipts for travel expenses within 30 days.",
+          "answerable": true,
+          "policy": {
+            "id": 93,
+            "title": "Travel Reimbursement Policy",
+            "department": "Facilities",
+            "category": "Finance & Expense",
+            "text": "Employees must submit receipts for travel expenses within 30 days."
+          },
+          "cited_title": "Travel Reimbursement Policy",
+          "evidence": "Employees must submit receipts for travel expenses within 30 days.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3476.6,
+            "tokens": {
+              "input": 236,
+              "output": 48,
+              "thinking": 97,
+              "total": 381
+            },
+            "embedding_tokens": 20,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 427.5,
+              "search_ms": 9.8,
+              "llm_ms": 3039.2
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Travel Reimbursement Policy",
+                "score": 0.79
+              },
+              {
+                "title": "Work From Abroad Policy",
+                "score": 0.646
+              },
+              {
+                "title": "Corporate Card Policy",
+                "score": 0.646
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 16,
+        "type": "paraphrase",
+        "question": "Can I keep our client list on my personal Dropbox?",
+        "expected": "Cloud Storage Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "keep",
+              "client",
+              "list",
+              "personal",
+              "dropbox"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No, you must use approved cloud storage for all company documents.",
+          "answerable": true,
+          "policy": {
+            "id": 54,
+            "title": "Cloud Storage Policy",
+            "department": "Operations",
+            "category": "IT & Security",
+            "text": "Use approved cloud storage for company documents."
+          },
+          "cited_title": "Cloud Storage Policy",
+          "evidence": "Use approved cloud storage for company documents.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5136.6,
+            "tokens": {
+              "input": 2781,
+              "output": 56,
+              "thinking": 311,
+              "total": 3148
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No, you must use approved cloud storage for company documents such as client lists.",
+          "answerable": true,
+          "policy": {
+            "id": 54,
+            "title": "Cloud Storage Policy",
+            "department": "Operations",
+            "category": "IT & Security",
+            "text": "Use approved cloud storage for company documents."
+          },
+          "cited_title": "Cloud Storage Policy",
+          "evidence": "Use approved cloud storage for company documents.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5650.1,
+            "tokens": {
+              "input": 222,
+              "output": 49,
+              "thinking": 315,
+              "total": 586
+            },
+            "embedding_tokens": 18,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 412.3,
+              "search_ms": 10.5,
+              "llm_ms": 5227.2
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Cloud Storage Policy",
+                "score": 0.715
+              },
+              {
+                "title": "Laptop Usage Policy",
+                "score": 0.671
+              },
+              {
+                "title": "Data Privacy Policy",
+                "score": 0.651
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 17,
+        "type": "paraphrase",
+        "question": "When do new hires stop being on trial?",
+        "expected": "Probation Period Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "new",
+              "hire",
+              "stop",
+              "trial"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "New hires complete their trial period after a 90-day probation period.",
+          "answerable": true,
+          "policy": {
+            "id": 43,
+            "title": "Probation Period Policy",
+            "department": "Facilities",
+            "category": "Human Resources",
+            "text": "New hires are subject to a 90-day probation period."
+          },
+          "cited_title": "Probation Period Policy",
+          "evidence": "New hires are subject to a 90-day probation period.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5572.9,
+            "tokens": {
+              "input": 2779,
+              "output": 66,
+              "thinking": 134,
+              "total": 2979
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "error": "Every answer model failed: gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.6-flash (503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+          "metrics": {
+            "ms": 5347.8,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 18,
+        "type": "paraphrase",
+        "question": "My laptop was hacked. What should I do?",
+        "expected": "Security Incident Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Company laptops must be used for business purposes only.",
+          "answerable": true,
+          "policy": {
+            "id": 68,
+            "title": "Laptop Usage Policy",
+            "department": "IT",
+            "category": "IT & Security",
+            "text": "Company laptops must be used for business purposes only."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "laptop",
+              "hack"
+            ],
+            "candidates": [
+              {
+                "title": "Laptop Usage Policy",
+                "score": 0.67,
+                "matched": [
+                  "laptop"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "You must report the security incident immediately.",
+          "answerable": true,
+          "policy": {
+            "id": 40,
+            "title": "Security Incident Policy",
+            "department": "IT",
+            "category": "IT & Security",
+            "text": "Security incidents must be reported immediately."
+          },
+          "cited_title": "Security Incident Policy",
+          "evidence": "Security incidents must be reported immediately.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 7341.8,
+            "tokens": {
+              "input": 2780,
+              "output": 40,
+              "thinking": 734,
+              "total": 3554
+            },
+            "retries": 0,
+            "model": "gemini-3.6-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "If your laptop was hacked, you must report the security incident immediately.",
+          "answerable": true,
+          "policy": {
+            "id": 40,
+            "title": "Security Incident Policy",
+            "department": "IT",
+            "category": "IT & Security",
+            "text": "Security incidents must be reported immediately."
+          },
+          "cited_title": "Security Incident Policy",
+          "evidence": "Security incidents must be reported immediately.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 7908.5,
+            "tokens": {
+              "input": 222,
+              "output": 46,
+              "thinking": 381,
+              "total": 649
+            },
+            "embedding_tokens": 17,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.6-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 1,
+            "breakdown": {
+              "embed_ms": 439.1,
+              "search_ms": 18.9,
+              "llm_ms": 7450.4
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Laptop Usage Policy",
+                "score": 0.651
+              },
+              {
+                "title": "Software Installation Policy",
+                "score": 0.611
+              },
+              {
+                "title": "Security Incident Policy",
+                "score": 0.59
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 19,
+        "type": "paraphrase",
+        "question": "Can I shift my start time to avoid the rush-hour commute?",
+        "expected": "Flexible Hours Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.5,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "shift",
+              "start",
+              "time",
+              "avoid",
+              "rush-hour",
+              "commute"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "Yes, you can adjust your work hours as long as you have manager approval.",
+          "answerable": true,
+          "policy": {
+            "id": 64,
+            "title": "Flexible Hours Policy",
+            "department": "HR",
+            "category": "Remote Work",
+            "text": "Employees may adjust work hours with manager approval."
+          },
+          "cited_title": "Flexible Hours Policy",
+          "evidence": "Employees may adjust work hours with manager approval.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3145.4,
+            "tokens": {
+              "input": 2784,
+              "output": 60,
+              "thinking": 145,
+              "total": 2989
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You may adjust your work hours with manager approval.",
+          "answerable": true,
+          "policy": {
+            "id": 64,
+            "title": "Flexible Hours Policy",
+            "department": "HR",
+            "category": "Remote Work",
+            "text": "Employees may adjust work hours with manager approval."
+          },
+          "cited_title": "Flexible Hours Policy",
+          "evidence": "Employees may adjust work hours with manager approval.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5698.7,
+            "tokens": {
+              "input": 230,
+              "output": 44,
+              "thinking": 192,
+              "total": 466
+            },
+            "embedding_tokens": 21,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 1,
+            "breakdown": {
+              "embed_ms": 388.3,
+              "search_ms": 18.1,
+              "llm_ms": 5292.0
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Flexible Hours Policy",
+                "score": 0.736
+              },
+              {
+                "title": "Remote Work Policy",
+                "score": 0.634
+              },
+              {
+                "title": "Home Office Equipment Policy",
+                "score": 0.632
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 20,
+        "type": "paraphrase",
+        "question": "Am I allowed to install Spotify on my work PC?",
+        "expected": "Software Installation Policy"
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "install",
+              "spotify",
+              "work",
+              "pc"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "You may only install Spotify on your work PC if it is approved software, as only approved software can be installed on company devices.",
+          "answerable": true,
+          "policy": {
+            "id": 7,
+            "title": "Software Installation Policy",
+            "department": "Sales",
+            "category": "IT & Security",
+            "text": "Only approved software may be installed on company devices."
+          },
+          "cited_title": "Software Installation Policy",
+          "evidence": "Only approved software may be installed on company devices.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3933.9,
+            "tokens": {
+              "input": 2781,
+              "output": 71,
+              "thinking": 277,
+              "total": 3129
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "You may only install Spotify on your work PC if it is approved software. Company policy specifies that only approved software can be installed on company devices.",
+          "answerable": true,
+          "policy": {
+            "id": 7,
+            "title": "Software Installation Policy",
+            "department": "Sales",
+            "category": "IT & Security",
+            "text": "Only approved software may be installed on company devices."
+          },
+          "cited_title": "Software Installation Policy",
+          "evidence": "Only approved software may be installed on company devices.",
+          "grounding": {
+            "status": "supported",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3320.3,
+            "tokens": {
+              "input": 228,
+              "output": 74,
+              "thinking": 242,
+              "total": 544
+            },
+            "embedding_tokens": 18,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 356.7,
+              "search_ms": 18.2,
+              "llm_ms": 2945.2
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Software Installation Policy",
+                "score": 0.737
+              },
+              {
+                "title": "Laptop Usage Policy",
+                "score": 0.69
+              },
+              {
+                "title": "Internet Usage Policy",
+                "score": 0.67
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 21,
+        "type": "out-of-scope",
+        "question": "Can I bring my dog to the office?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.5,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "Access badges must be worn and not shared.",
+          "answerable": true,
+          "policy": {
+            "id": 51,
+            "title": "Office Access Policy",
+            "department": "HR",
+            "category": "IT & Security",
+            "text": "Access badges must be worn and not shared."
+          },
+          "grounding": {
+            "status": "supported",
+            "reasons": [
+              "Returns the policy text verbatim, so nothing is invented."
+            ]
+          },
+          "details": {
+            "query_terms": [
+              "bring",
+              "dog",
+              "office"
+            ],
+            "candidates": [
+              {
+                "title": "Office Access Policy",
+                "score": 0.46,
+                "matched": [
+                  "office"
+                ]
+              },
+              {
+                "title": "Home Office Equipment Policy",
+                "score": 0.46,
+                "matched": [
+                  "office"
+                ]
+              }
+            ]
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No policy in the database covers bringing pets or dogs to the office.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3571.2,
+            "tokens": {
+              "input": 2779,
+              "output": 35,
+              "thinking": 39,
+              "total": 2853
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers whether you can bring a dog to the office.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5075.8,
+            "tokens": {
+              "input": 223,
+              "output": 31,
+              "thinking": 91,
+              "total": 345
+            },
+            "embedding_tokens": 16,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.8-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 408.0,
+              "search_ms": 17.9,
+              "llm_ms": 4649.8
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Remote Work Policy",
+                "score": 0.66
+              },
+              {
+                "title": "Workplace Accommodation Policy",
+                "score": 0.655
+              },
+              {
+                "title": "Mobile Device Policy",
+                "score": 0.654
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 22,
+        "type": "out-of-scope",
+        "question": "How many stock options do new hires receive?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.4,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "stock",
+              "option",
+              "new",
+              "hire",
+              "receive"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No policy in the database covers this.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4966.9,
+            "tokens": {
+              "input": 2779,
+              "output": 29,
+              "thinking": 572,
+              "total": 3380
+            },
+            "retries": 0,
+            "model": "gemini-3.8-flash",
+            "fallbacks": []
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers this question.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4455.1,
+            "tokens": {
+              "input": 230,
+              "output": 24,
+              "thinking": 291,
+              "total": 545
+            },
+            "embedding_tokens": 16,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.6-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 356.7,
+              "search_ms": 18.4,
+              "llm_ms": 4079.9
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Probation Period Policy",
+                "score": 0.686
+              },
+              {
+                "title": "Vacation Policy",
+                "score": 0.663
+              },
+              {
+                "title": "Background Check Policy",
+                "score": 0.659
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 23,
+        "type": "out-of-scope",
+        "question": "Is smoking allowed on company premises?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 1.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "smok",
+              "premise"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No policy in the database covers whether smoking is allowed on company premises.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4694.4,
+            "tokens": {
+              "input": 2777,
+              "output": 45,
+              "thinking": 306,
+              "total": 3128
+            },
+            "retries": 0,
+            "model": "gemini-3.6-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "error": "Every answer model failed: gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.; gemini-3.6-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+          "metrics": {
+            "ms": 3250.4,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 24,
+        "type": "out-of-scope",
+        "question": "Does the company pay for a gym membership?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "pay",
+              "gym",
+              "membership"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No policy in the database covers whether the company pays for a gym membership.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5895.8,
+            "tokens": {
+              "input": 2779,
+              "output": 46,
+              "thinking": 595,
+              "total": 3420
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers whether the company pays for a gym membership.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 3853.9,
+            "tokens": {
+              "input": 228,
+              "output": 36,
+              "thinking": 133,
+              "total": 397
+            },
+            "embedding_tokens": 16,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 396.4,
+              "search_ms": 18.6,
+              "llm_ms": 3438.8
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Vacation Policy",
+                "score": 0.642
+              },
+              {
+                "title": "Training Reimbursement Policy",
+                "score": 0.627
+              },
+              {
+                "title": "Diversity and Inclusion Policy",
+                "score": 0.625
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 25,
+        "type": "out-of-scope",
+        "question": "What is the salary range for a senior engineer?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "salary",
+              "range",
+              "senior",
+              "engineer"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No policy in the database covers the salary range for a senior engineer.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4053.9,
+            "tokens": {
+              "input": 2780,
+              "output": 45,
+              "thinking": 173,
+              "total": 2998
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers the salary range for a senior engineer.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5540.9,
+            "tokens": {
+              "input": 224,
+              "output": 35,
+              "thinking": 142,
+              "total": 401
+            },
+            "embedding_tokens": 17,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 338.4,
+              "search_ms": 9.2,
+              "llm_ms": 5193.1
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Performance Review Policy",
+                "score": 0.599
+              },
+              {
+                "title": "Training Reimbursement Policy",
+                "score": 0.598
+              },
+              {
+                "title": "Expense Approval Policy",
+                "score": 0.593
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 26,
+        "type": "out-of-scope",
+        "question": "Is there a company pension plan?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.2,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "pension",
+              "plan"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "I am sorry, but no policy in the database covers a company pension plan.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 4320.0,
+            "tokens": {
+              "input": 2777,
+              "output": 48,
+              "thinking": 268,
+              "total": 3093
+            },
+            "retries": 0,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers whether there is a company pension plan.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5513.0,
+            "tokens": {
+              "input": 220,
+              "output": 35,
+              "thinking": 126,
+              "total": 381
+            },
+            "embedding_tokens": 14,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.7-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 441.1,
+              "search_ms": 9.7,
+              "llm_ms": 5061.9
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Performance Review Policy",
+                "score": 0.654
+              },
+              {
+                "title": "Equal Opportunity Policy",
+                "score": 0.641
+              },
+              {
+                "title": "Vacation Policy",
+                "score": 0.639
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "q": {
+        "id": 27,
+        "type": "out-of-scope",
+        "question": "Is overtime paid at a higher rate?",
+        "expected": null
+      },
+      "results": {
+        "rules": {
+          "approach": "rules",
+          "metrics": {
+            "ms": 0.3,
+            "tokens": {
+              "input": 0,
+              "output": 0,
+              "thinking": 0,
+              "total": 0
+            }
+          },
+          "answer": "No policy matched the words in this question.",
+          "answerable": false,
+          "policy": null,
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "details": {
+            "query_terms": [
+              "overtime",
+              "paid",
+              "higher",
+              "rate"
+            ],
+            "candidates": []
+          }
+        },
+        "llm": {
+          "approach": "llm",
+          "answer": "No policy in the database covers whether overtime is paid at a higher rate.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 6692.5,
+            "tokens": {
+              "input": 2778,
+              "output": 46,
+              "thinking": 592,
+              "total": 3416
+            },
+            "retries": 1,
+            "model": "gemini-3.7-flash",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ]
+          },
+          "details": {
+            "policies_in_prompt": 98
+          }
+        },
+        "vector": {
+          "approach": "vector",
+          "answer": "No policy in the database covers it.",
+          "answerable": false,
+          "policy": null,
+          "cited_title": "",
+          "evidence": "",
+          "grounding": {
+            "status": "abstained",
+            "reasons": []
+          },
+          "metrics": {
+            "ms": 5151.1,
+            "tokens": {
+              "input": 226,
+              "output": 23,
+              "thinking": 323,
+              "total": 572
+            },
+            "embedding_tokens": 15,
+            "embedding_tokens_estimated": false,
+            "model": "gemini-3.6-flash",
+            "embedding_model": "gemini-embedding-2",
+            "fallbacks": [
+              "gemini-3.8-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+              "gemini-3.7-flash (429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google."
+            ],
+            "retries": 0,
+            "breakdown": {
+              "embed_ms": 373.2,
+              "search_ms": 18.2,
+              "llm_ms": 4759.6
+            }
+          },
+          "details": {
+            "retrieved": [
+              {
+                "title": "Promotion Policy",
+                "score": 0.628
+              },
+              {
+                "title": "Vacation Policy",
+                "score": 0.628
+              },
+              {
+                "title": "Training Reimbursement Policy",
+                "score": 0.618
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "rules": {
+      "questions_run": 27,
+      "errors": 0,
+      "correct_policy": {
+        "n": 5,
+        "of": 20
+      },
+      "by_type": {
+        "direct": {
+          "correct": 5,
+          "total": 7
+        },
+        "paraphrase": {
+          "correct": 0,
+          "total": 13
+        }
+      },
+      "declined_out_of_scope": {
+        "n": 6,
+        "of": 7
+      },
+      "answered_out_of_scope": {
+        "n": 1,
+        "of": 7
+      },
+      "unsupported_claims": {
+        "n": 0,
+        "of": 27
+      },
+      "wrong_policy": {
+        "n": 2,
+        "of": 20
+      },
+      "avg_ms": 0,
+      "avg_tokens": 0
+    },
+    "llm": {
+      "questions_run": 26,
+      "errors": 1,
+      "correct_policy": {
+        "n": 19,
+        "of": 19
+      },
+      "by_type": {
+        "direct": {
+          "correct": 7,
+          "total": 7
+        },
+        "paraphrase": {
+          "correct": 12,
+          "total": 12
+        }
+      },
+      "declined_out_of_scope": {
+        "n": 7,
+        "of": 7
+      },
+      "answered_out_of_scope": {
+        "n": 0,
+        "of": 7
+      },
+      "unsupported_claims": {
+        "n": 0,
+        "of": 26
+      },
+      "wrong_policy": {
+        "n": 0,
+        "of": 19
+      },
+      "avg_ms": 5043,
+      "avg_tokens": 3176
+    },
+    "vector": {
+      "questions_run": 24,
+      "errors": 3,
+      "correct_policy": {
+        "n": 17,
+        "of": 18
+      },
+      "by_type": {
+        "direct": {
+          "correct": 6,
+          "total": 6
+        },
+        "paraphrase": {
+          "correct": 11,
+          "total": 12
+        }
+      },
+      "declined_out_of_scope": {
+        "n": 6,
+        "of": 6
+      },
+      "answered_out_of_scope": {
+        "n": 0,
+        "of": 6
+      },
+      "unsupported_claims": {
+        "n": 0,
+        "of": 24
+      },
+      "wrong_policy": {
+        "n": 0,
+        "of": 18
+      },
+      "avg_ms": 4824,
+      "avg_tokens": 514
+    }
+  },
+  "models": {
+    "llm": "gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash",
+    "embedding": "gemini-embedding-2, gemini-embedding-001"
+  },
+  "error": null
+}
