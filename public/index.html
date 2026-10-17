@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Policy Assistant: three ways to answer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Ask one policy question, get three answers</h1>
+    <p class="lede">The same question goes to a keyword search, an LLM that reads every policy, and an LLM that reads only the policies a vector index retrieves. Compare what each one says, how long it takes, what it costs in tokens, and whether it stays inside the policy database.</p>
+
+    <form id="ask" autocomplete="off">
+      <label for="q">Your question</label>
+      <div class="row">
+        <input id="q" name="q" type="text" maxlength="300" placeholder="e.g. How many vacation days do I get?" required>
+        <button id="go" type="submit">Ask all three</button>
+      </div>
+      <div class="chips" id="chips" aria-label="Example questions"></div>
+    </form>
+    <p id="banner" class="banner" hidden></p>
+  </header>
+
+  <main>
+    <section id="results" class="cols" aria-live="polite" hidden></section>
+
+    <section class="bench" id="benchmark">
+      <div class="bench-head">
+        <div>
+          <h2>Benchmark on 27 test questions</h2>
+          <p class="sub">20 questions the database can answer (7 worded like the policy, 13 in everyday language) and 7 it cannot. Every question runs through all three approaches.</p>
+        </div>
+        <button id="runBench" type="button" class="secondary">Run benchmark</button>
+      </div>
+      <p id="benchStatus" class="sub"></p>
+      <div id="benchTable"></div>
+      <details id="benchDetail" hidden>
+        <summary>See every question and answer</summary>
+        <div id="benchRows"></div>
+      </details>
+    </section>
+
+    <section class="db">
+      <details>
+        <summary>Browse the policy database (<span id="count">0</span> policies)</summary>
+        <input id="filter" type="search" placeholder="Filter by title, text, department or category" aria-label="Filter policies">
+        <div class="table-wrap"><table id="policyTable"><thead><tr><th>Title</th><th>Text</th><th>Department</th><th>Category</th></tr></thead><tbody></tbody></table></div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p id="models"></p>
+  </footer>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
