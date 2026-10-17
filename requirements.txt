@@ -1,0 +1,3 @@
+# The website (python app.py) needs nothing from this file: it uses only Python's standard library.
+# Only the Slack bot (python slack_bot.py) needs this package:
+slack_bolt>=1.18

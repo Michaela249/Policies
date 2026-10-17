@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: policy-assistant
+    runtime: python
+    plan: free
+    buildCommand: echo "no build step"
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.3"
+      - key: GEMINI_API_KEY
+        sync: false   # paste your key in the Render dashboard, never in git
